@@ -1,2 +1,2 @@
-const BASE = 'http://localhost:8080';
+const BASE = 'https://express-initializr-backend.onrender.com';
 export default BASE;
