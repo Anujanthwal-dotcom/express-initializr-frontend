@@ -1,2 +1,2 @@
-const BASE = 'https://express-initializr-backend.onrender.com';
+const BASE = 'https://express-initializr-backend.vercel.app';
 export default BASE;
