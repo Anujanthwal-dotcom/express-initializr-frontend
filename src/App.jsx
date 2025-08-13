@@ -153,17 +153,17 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-tr from-slate-100 to-slate-200 p-8">
+    <div className="min-h-screen w-full bg-black p-8">
       <header className="text-center mb-12">
-        <h1 className="text-5xl font-extrabold text-blue-700 drop-shadow-sm">
-          🚀 Express Initializr
+        <h1 className="text-5xl font-extrabold text-white drop-shadow-sm">
+          Express Initializr
         </h1>
-        <p className="text-lg text-gray-600 mt-2">
+        <p className="text-lg text-white mt-2">
           Scaffold your backend project effortlessly
         </p>
         <div className="mt-12 text-center text-black">
           <p className="text-xl font-semibold tracking-wide">
-            👨‍💻 Created by Anuj Anthwal
+            Created by Anuj Anthwal
           </p>
 
           <div className="flex justify-center items-center gap-6 mt-3">
@@ -171,7 +171,7 @@ function App() {
               href="https://github.com/Anujanthwal-dotcom"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+              className="flex items-center gap-2 text-white hover:text-blue-800 transition-colors"
             >
               <FaGithub size={20} />
               <span className="underline">GitHub</span>
@@ -181,7 +181,7 @@ function App() {
               href="https://www.linkedin.com/in/anuj-anthwal/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+              className="flex items-center gap-2 text-white hover:text-blue-800 transition-colors"
             >
               <FaLinkedin size={20} />
               <span className="underline">LinkedIn</span>
@@ -192,53 +192,53 @@ function App() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 h-full">
         {/* Left Section */}
-        <section className="bg-white shadow-md rounded-xl p-8 border border-gray-200 flex flex-col justify-between">
+        <section className="bg-gray-700 shadow-md rounded-xl p-8 border-4 border-white flex flex-col justify-between">
           <div className="space-y-6">
             <div>
-              <label className="block text-gray-700 font-medium mb-2">
-                📁 Project Name
+              <label className="block text-white font-medium mb-2">
+                Project Name
               </label>
               <input
                 type="text"
                 value={projectName}
                 onChange={(e) => setProjectName(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-                placeholder="my-express-app"
+                className="w-full px-4 py-3 border-2 border-white text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder=""
                 required
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-2">
-                📝 Description
+              <label className="block text-white font-medium mb-2">
+                Description
               </label>
               <input
                 type="text"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-                placeholder="A powerful API built with Express"
+                className="w-full px-4 py-3 border-2 border-white text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder=""
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-2">
-                👨‍💻 Author
+              <label className="block text-white font-medium mb-2">
+                Author
               </label>
               <input
                 type="text"
                 value={author}
                 onChange={(e) => setAuthor(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-                placeholder="Anuj Kumar"
+                className="w-full px-4 py-3 border-2 border-white text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder=""
               />
             </div>
           </div>
 
           {/* Folder Structure Selector */}
           <div className="mt-10">
-            <label className="block text-gray-700 font-semibold mb-3">
-              🧱 Choose Folder Structure
+            <label className="block text-white font-semibold mb-3">
+              Choose Folder Structure
             </label>
             <div className="flex gap-4">
               {["Basic", "MVC", "MMVC"].map((structure, idx) => (
@@ -251,7 +251,7 @@ function App() {
                     checked={folderStructure === structure}
                     onChange={(e) => setFolderStructure(e.target.value)}
                   />
-                  <span className="text-gray-800">{structure}</span>
+                  <span className="text-white">{structure}</span>
                 </label>
               ))}
             </div>
@@ -260,7 +260,7 @@ function App() {
           {/* Optional Files */}
           <div className="mt-8">
             <label className="block text-gray-700 font-semibold mb-3">
-              📄 Optional Files to Include
+              Optional Files to Include
             </label>
             <div className="grid grid-cols-2 gap-3">
               {[".env", ".gitignore", "README.md", "Dockerfile"].map(
@@ -273,7 +273,7 @@ function App() {
                       checked={optionalFiles.includes(file)}
                       onChange={() => handleOptionalFileChange(file)}
                     />
-                    <span className="text-gray-800">{file}</span>
+                    <span className="text-white">{file}</span>
                   </label>
                 )
               )}
@@ -282,11 +282,11 @@ function App() {
         </section>
 
         {/* Right Section */}
-        <section className="bg-white shadow-md rounded-xl p-8 border border-gray-200 flex flex-col justify-between">
+        <section className="bg-gray-700 shadow-md rounded-xl p-8 border-4 border-white flex flex-col justify-between">
           <div className="space-y-10">
             <div>
-              <h2 className="text-xl font-semibold text-gray-800 mb-3 border-b pb-2 border-gray-300">
-                📦 Common Dependencies
+              <h2 className="text-xl font-semibold text-white mb-3 border-b pb-2 border-gray-300">
+                Common Dependencies
               </h2>
               <div className="flex flex-wrap gap-3">
                 {commonDependencies.map((dep, idx) => (
@@ -306,8 +306,8 @@ function App() {
             </div>
 
             <div>
-              <h2 className="text-xl font-semibold text-gray-800 mb-3 border-b pb-2 border-gray-300">
-                🛠️ Common Dev Dependencies
+              <h2 className="text-xl font-semibold text-white mb-3 border-b pb-2 border-gray-300">
+                Common Dev Dependencies
               </h2>
               <div className="flex flex-wrap gap-3">
                 {commonDevDependencies.map((dep, idx) => (
@@ -333,7 +333,7 @@ function App() {
       <div className="w-full flex justify-center mt-12">
         <button
           onClick={(e) => handleCreateProject(e)}
-          className="bg-blue-600 hover:bg-blue-700 hover:cursor-pointer text-white text-lg px-6 py-3 rounded-full shadow-xl transition font-semibold"
+          className="bg-gray-500 hover:bg-white hover:cursor-pointer hover:text-black text-white text-lg px-6 py-3 rounded-full shadow-xl transition font-semibold"
           style={{ minWidth: "180px" }}
         >
           <span
@@ -343,7 +343,7 @@ function App() {
             {loading ? (
               <ClipLoader color="#fff" size={24} />
             ) : (
-              "⚙️ Create Project"
+              <span>"Create Project"</span>
             )}
           </span>
         </button>
