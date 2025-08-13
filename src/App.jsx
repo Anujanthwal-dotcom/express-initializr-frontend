@@ -162,7 +162,7 @@ function App() {
           Scaffold your backend project effortlessly
         </p>
         <div className="mt-12 text-center text-black">
-          <p className="text-xl font-semibold tracking-wide">
+          <p className="text-xl font-semibold text-white tracking-wide">
             Created by Anuj Anthwal
           </p>
 
